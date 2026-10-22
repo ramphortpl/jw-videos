@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>JW Vidéos</title>
+  <link rel="preconnect" href="https://b.jw-cdn.org">
+  <link rel="preconnect" href="https://cms-imgp.jw-cdn.org">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Police chargée sans bloquer le premier affichage -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/app.css">
+  <!-- Tous les modules demandés d'un coup plutôt qu'en cascade -->
+  <link rel="modulepreload" href="js/main.js">
+  <link rel="modulepreload" href="js/ui.js">
+  <link rel="modulepreload" href="js/focus.js">
+  <link rel="modulepreload" href="js/api.js">
+  <link rel="modulepreload" href="js/store.js">
+  <link rel="modulepreload" href="js/views.js">
+  <link rel="modulepreload" href="js/player.js">
+</head>
+<body>
+  <div id="stage">
+    <div class="backdrop">
+      <div class="backdrop-layer"></div>
+      <div class="backdrop-layer"></div>
+      <div class="backdrop-shade"></div>
+    </div>
+    <div id="views"></div>
+    <div id="clock" class="clock"></div>
+    <div id="toast" class="toast is-hidden"></div>
+    <div id="boot" class="boot"><div class="spinner"></div></div>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
